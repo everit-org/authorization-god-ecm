@@ -38,7 +38,7 @@ import aQute.bnd.annotation.headers.ProvideCapability;
 
 /**
  * ECM component for {@link PermissionChecker} and {@link AuthorizationQdslUtil} interfaces based on
- * {@link ResourceServiceImpl}.
+ * {@link AuthorizationGod}.
  */
 @Component(componentId = AuthorizationGodConstants.SERVICE_FACTORYPID_AUTHORIZATION_GOD,
     configurationPolicy = ConfigurationPolicy.IGNORE, label = "Everit Authorization God",
