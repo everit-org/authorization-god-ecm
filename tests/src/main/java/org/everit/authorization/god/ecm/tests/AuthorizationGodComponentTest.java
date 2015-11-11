@@ -28,7 +28,7 @@ import org.everit.osgi.ecm.extender.ECMExtenderConstants;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.mysema.query.types.template.BooleanTemplate;
+import com.querydsl.core.types.dsl.Expressions;
 
 import aQute.bnd.annotation.headers.ProvideCapability;
 
@@ -63,7 +63,7 @@ public class AuthorizationGodComponentTest {
 
   @Test
   public void testComplex() {
-    Assert.assertEquals(BooleanTemplate.TRUE,
+    Assert.assertEquals(Expressions.TRUE,
         authorizationQdslUtil.authorizationPredicate(0, null));
 
     Assert.assertTrue(permissionChecker.hasPermission(0, 0));
